@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navbar i{
+    margin: 10px;
+    font-size: 30px;
+}
+.navbar span
+{
+    color: rgb(255, 36, 91);
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.navbar h1{
+    margin: 10px;
+    font-size: 30px;
+    color: rgb(121, 121, 101);
+    font-weight: 100;
+    margin-left: 19px;
+}
+.input-container
+{
+    margin-top: 30px;
+    min-width: 600px;
+    min-height: 100px;
+    position: absolute;
+    top: 24%;
+    left: 51%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+.title-input
+{
+    display: none;
+}
+.display-block
+{
+    display: block !important;
+}
+textarea:focus + input[type]
+{
+    display: block !important;
+}
+input,textarea
+{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    min-height: 80px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    word-break: break-all;  
+    resize: none; 
+}
+.add-btn
+{
+    margin-left: auto;
+    padding: 25px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: rgb(103, 211, 103);
+}
+.note-container
+{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding: 20px;
+   min-height: 150px;
+  margin: 20px;
+  width: 250px;
+ border: .5px solid rgb(199, 198, 198);
+ border-radius: 10px;
+ transition: .5s;
+}
+.note:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.note h3{
+text-align: center;
+}
+.note p{
+text-align: start;
+padding: 20px;
+}
+.note i{
+text-align: end;
+color: crimson;
+transition: .5s;
+cursor: pointer;
+}
+
+.note i:hover
+{
+    color: #000;
+}
+
+@media only screen and (max-width:600px) {
+    .input-container
+{
+    margin-top: 8px;
+    min-width: 294px;
+    min-height: 148px;
+}
+}
